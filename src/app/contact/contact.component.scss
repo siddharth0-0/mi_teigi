@@ -1,0 +1,126 @@
+.content-sec {
+    .sec-a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image-a img {
+            margin: 15px;
+        }
+        .text-a {
+            font-style: italic;
+            font-weight: normal;
+            margin: 15px;
+        }
+    }
+    .sec-b {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image-b img {
+            width: 550px;
+            height: 350px;
+            flex-grow: 3;
+            margin: 15px;
+            transition: 2s;
+        }
+        .image-b img:hover {
+            transform: scale(1.05);
+            box-shadow: 10px 10px 5px 3px #211f20;
+        }
+        .text-b {
+            font-style: italic;
+            font-weight: normal;
+            margin: 15px;
+        }
+    }
+    .sec-c {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image-c img {
+            width: 480px;
+            margin: 15px;
+            transition: 2s;
+            border: double #ff0066;
+        }
+        .image-c img:hover {
+            transform: scale(1.05);
+        }
+        .text-c {
+            font-style: italic;
+            font-weight: normal;
+            // flex-grow: 1;
+            margin: 15px;
+        }
+    }
+    .sec-d {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image-d img {
+            width: 600px;
+            height: 380px;
+            margin: 25px;
+            // flex-grow: 3;
+            transition: 2s;
+        }
+        .text-d {
+            font-style: italic;
+            font-weight: normal;
+            // flex-grow: 1;
+            margin: 15px;
+        }
+        .image-d img:hover {
+            transform: scale(1.05);
+            box-shadow: -15px 25px 5px -3px #9bcfea;
+        }
+    }
+    .sec-e {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image-e img {
+            width: 480px;
+            border: double red;
+            margin: 25px;
+            // flex-grow: 3;
+            transition: 3s;
+        }
+        .image-e img:hover {
+            transform: scale(1.05);
+        }
+        .text-e {
+            font-style: italic;
+            font-weight: normal;
+            // flex-grow: 1;
+            margin: 15px;
+        }
+    }
+}
+
+footer {
+    background-color: black;
+    p {
+        color: wheat;
+        text-align: center;
+    }
+}
+
+@media(max-width: 740px) {
+    .sec-b {
+        .image-b img {
+            width: 450px;
+            height: 280px;
+            margin: 8px;
+        }
+        .text-b {
+            margin: 8px;
+        }
+    }
+    .sec-e {
+        .image-e img {
+            width: 340px;
+            margin: 15px;
+        }
+    }
+}
